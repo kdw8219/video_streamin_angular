@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+</nav>
+<router-outlet></router-outlet>
+<!--app-heroes></app-heroes-->
+<!--selectedHero를 hero-detail의 hero에 binding하는 과정-->
+<!--app-hero-detail [hero]="selectedHero"></app-hero-detail-->
